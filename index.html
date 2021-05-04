@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice java script</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="full-wrapper">
+        <div class="conteiner">
+            <div class="box1">
+                <p>loke at the display and click the button to get answer</p>
+                <p>300 +99 ?</p>
+                <p>the answer is = <span id="one"></span></p> 
+                <a href="#" onclick="add();">click here</a>
+            </div>
+            <div class="box2">
+                <p>loke at the display and click the button to get answer</p>
+                <p>300-99 ?</p>
+                <p>the answer is = <span id="two"></span></p> 
+                <a href="#" onclick="min();">click here</a>
+            </div>
+            <div class="box3">
+                <p>loke at the display and click the button to get answer</p>
+                <p>55*5</p>
+                <p>the answer is = <span id="three"></span></p> 
+                <a href="#" onclick="mul(55,5);">click here</a>
+            </div>
+            <div class="box4">
+                <p>loke at the display and click the button to get answer</p>
+                <p>60%10</p>
+                <p>the answer is = <span id="four"></span></p> 
+                <a href="#" onclick="percent(60,10);">click here</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    function add(){
+        var x = 300;
+        var y = 99;
+        var xy = 300 + 99;
+        document.getElementById("one").innerHTML = xy;
+    }
+
+
+    function min(){
+        var x = 300;
+        var y = 99;
+        var xy = 300 - 99;
+        document.getElementById("two").innerHTML = xy;
+    }
+
+    function mul(a,b){
+        document.getElementById("three").innerHTML = a*b;
+    }
+
+    function percent(a,b){
+        document.getElementById("four").innerHTML = a%b;
+    }
+
+</script>
+
+
+
+</body>
+</html>
